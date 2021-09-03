@@ -3,6 +3,8 @@
 
 /** Ionic CSS Variables **/
 :root {
+  
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -105,6 +107,14 @@
     --ion-item-background: #000000;
 
     --ion-card-background: #1c1c1d;
+  
+  p {
+    font-family: 'Besley', serif;
+  }
+    
+  ion-title {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
