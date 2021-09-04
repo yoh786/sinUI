@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'alt-page',
+    loadChildren: () => import('./alt-page/alt-page.module').then( m => m.AltPagePageModule)
+  },
+  {
+    path: 'full-firebase-page',
+    loadChildren: () => import('./full-firebase-page/full-firebase-page.module').then( m => m.FullFirebasePagePageModule)
+  },
 ];
 
 @NgModule({
