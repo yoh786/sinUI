@@ -13,7 +13,7 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-card>
+  <ion-card id="top-card">
     <ion-card-header>
       <ion-card-subtitle>First UI element</ion-card-subtitle>
       <ion-card-title>A reminder</ion-card-title>
@@ -24,5 +24,45 @@
       <p>Keep close to Nature's heart... and break clear away, once in awhile,
       and climb a mountain or spend a week in the woods. Wash your spirit clean.</p>
     </ion-card-content>
+  </ion-card>  
+  
+  <ion-card id="menu-card">
+    <ion-card-header>
+      <ion-card-subtitle>A clumsy attempt</ion-card-subtitle>
+      <ion-card-title>At a menu</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-img src="assets/red.jpg" alt="tree" style="margin-bottom: 24px;"></ion-img>
+      <p style="margin-bottom: 25px;">I think I'll be putting an ion item list below here.</p>
+
+      <ion-list>
+        <ion-item href="#bottom-card">
+          <ion-icon name="flash-outline" style="margin-right: 5px; color: #ffe066;"></ion-icon>
+          <ion-label>Pokémon Yellow</ion-label>
+        </ion-item>
+        <ion-item href="#menu-card">
+          <ion-icon name="color-filter-outline" style="margin-right: 5px; color: #f25f5c;"></ion-icon>
+          <ion-label>Mega Man X</ion-label>
+        </ion-item>
+        <ion-item href="#top-card">
+          <ion-icon name="leaf-outline" style="margin-right: 5px; color: #70c1b3;"></ion-icon>
+          <ion-label>The Legend of Zelda</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
   </ion-card>
+
+  <ion-card id="bottom-card">
+      <ion-card-header>
+        <ion-card-subtitle>A final attempt</ion-card-subtitle>
+        <ion-card-title>At something functional</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>The final card. We may try to embed a firebase item / active element</p>
+      </ion-card-content>
+    
+  </ion-card>
+
 </ion-content>
